@@ -2,7 +2,9 @@ import type { SearchDoc, SearchKind } from "@/lib/search";
 
 /** Backend base URL, e.g. https://historia-api.onrender.com. Empty = static mode (no backend). */
 const raw = String(import.meta.env.VITE_API_URL ?? "").trim().replace(/\/+$/, "");
-export const API_URL = raw && !/^https?:\/\//.test(raw) ? `https://${raw}` : raw;
+// Accept a bare host too; a dotless Render service name is expanded to its public onrender.com host.
+const withHost = raw && !/^https?:\/\//.test(raw) ? `https://${raw.includes(".") ? raw : `${raw}.onrender.com`}` : raw;
+export const API_URL = withHost;
 
 type Bi = { en: string; uz: string };
 interface ApiHit { kind: SearchKind; slug: string; title: Bi; meta: Bi }

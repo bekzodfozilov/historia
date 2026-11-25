@@ -41,11 +41,10 @@ services:
     envVars:
       - key: NODE_VERSION
         value: "22"
+      # Public URL of historia-api. (fromService/host would give the private hostname,
+      # which browsers can't reach.) Update this if the API service is renamed.
       - key: VITE_API_URL
-        fromService:
-          name: historia-api
-          type: web
-          property: host
+        value: https://historia-api-3yty.onrender.com
     headers:
       - path: /assets/*
         name: Cache-Control
