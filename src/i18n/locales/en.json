@@ -1,0 +1,244 @@
+{
+ "nav": {
+  "explore": "Explore",
+  "countries": "Countries",
+  "timeline": "Timeline",
+  "civilizations": "Civilizations",
+  "people": "People",
+  "events": "Events",
+  "menu": "Menu",
+  "close": "Close"
+ },
+ "hero": {
+  "eyebrow": "A digital museum of human history",
+  "title": "The Entire History of Humanity. One Place.",
+  "lead": "Countries, empires, people and events — mapped, dated, sourced, and connected across five thousand years.",
+  "stats": {
+   "years": "years of recorded history",
+   "countries": "countries to explore",
+   "langs": "languages"
+  }
+ },
+ "search": {
+  "placeholder": "Search countries, empires, people, events...",
+  "recent": "Recent searches",
+  "clear": "Clear",
+  "noResults": "Nothing found for “{{q}}”. Try a different spelling or a broader term.",
+  "hint": "Press / to search",
+  "groups": {
+   "civilizations": "Civilizations",
+   "people": "People",
+   "events": "Events",
+   "countries": "Countries"
+  }
+ },
+ "sections": {
+  "timeline": {
+   "eyebrow": "Chronicle",
+   "title": "Five millennia at a glance",
+   "lead": "Drag or scroll through the featured timeline. Every date shows its precision.",
+   "all": "Open full timeline"
+  },
+  "civs": {
+   "eyebrow": "Civilizations & Empires",
+   "title": "The great powers of history",
+   "all": "All civilizations",
+   "peak": "Peak area",
+   "capital": "Capital",
+   "disputed": "Disputed"
+  },
+  "people": {
+   "eyebrow": "Personalities",
+   "title": "Minds and makers",
+   "all": "All people"
+  },
+  "today": {
+   "eyebrow": "On this day",
+   "title": "{{date}} in history",
+   "empty": "No verified events are catalogued for this date yet. Our editors add new entries each week.",
+   "prev": "Previous day",
+   "next": "Next day"
+  },
+  "map": {
+   "eyebrow": "Atlas",
+   "title": "Explore the world map",
+   "lead": "Hover a country to identify it. The full atlas adds historical borders, period layers and comparisons.",
+   "open": "Open the atlas",
+   "hover": "Hover a country"
+  },
+  "recent": {
+   "eyebrow": "Recently added",
+   "title": "New in the archive",
+   "added": "Added"
+  }
+ },
+ "categories": {
+  "politics": "Politics",
+  "wars": "Wars",
+  "science": "Science",
+  "technology": "Technology",
+  "culture": "Culture",
+  "religion": "Religion",
+  "geography": "Geography",
+  "discoveries": "Discoveries"
+ },
+ "kinds": {
+  "civilizations": "Civilization",
+  "people": "Person",
+  "events": "Event",
+  "countries": "Country"
+ },
+ "common": {
+  "sources": "Sources",
+  "readMore": "Read more",
+  "back": "Back to home"
+ },
+ "soon": {
+  "eyebrow": "In development",
+  "body": "This section is part of the next build stage. The homepage, navigation, search and bilingual system are live now.",
+  "stage": "Planned for stage {{n}}"
+ },
+ "footer": {
+  "tagline": "A digital museum, atlas and encyclopedia of human history.",
+  "sourcing": "Content is sourced from museums, universities and recognised reference works. Disputed dates are marked.",
+  "rights": "HISTORIA"
+ },
+ "continents": {
+  "all": "All continents",
+  "africa": "Africa",
+  "americas": "Americas",
+  "asia": "Asia",
+  "europe": "Europe",
+  "oceania": "Oceania",
+  "antarctic": "Antarctic"
+ },
+ "countries": {
+  "title": "Countries of the world",
+  "lead": "{{n}} countries and territories. Search, filter by continent or by historical period, and open any profile.",
+  "search": "Search countries...",
+  "sortAZ": "A → Z",
+  "sortZA": "Z → A",
+  "sortArea": "Largest area",
+  "period": "Historical period",
+  "anyPeriod": "Any period",
+  "results": "{{n}} results",
+  "empty": "No countries match these filters.",
+  "reset": "Reset filters",
+  "capital": "Capital",
+  "area": "Area",
+  "region": "Region",
+  "languages": "Languages",
+  "borders": "Neighbours",
+  "status": "Status",
+  "independent": "Independent state",
+  "territory": "Territory",
+  "un": "UN member",
+  "landlocked": "Landlocked",
+  "curated": "Full history",
+  "noHistoryTitle": "The historical article for this country is being written",
+  "noHistoryBody": "We only publish history that has been reviewed against reliable sources. Until then, here is the verified geographic profile and the civilizations connected to this territory.",
+  "sections": {
+   "overview": "Overview",
+   "origins": "Origins and early history",
+   "ancient": "Ancient period",
+   "medieval": "Medieval period",
+   "modern": "Modern period",
+   "contemporary": "Contemporary history"
+  },
+  "empires": "Former kingdoms and empires",
+  "places": "Important historical places",
+  "onMap": "Show on map",
+  "none": "None"
+ },
+ "explore": {
+  "title": "Atlas",
+  "lead": "Click any country to see its profile. Choose a civilization to see which modern states lie on its core territory.",
+  "layer": "Historical layer",
+  "layerNone": "Present-day borders",
+  "layerNote": "Highlighted states are an approximation using modern borders, not historical boundaries. Reliable historical border datasets will be added as separate layers.",
+  "compare": "Compare",
+  "compareWith": "Pick a second country on the map",
+  "clear": "Clear",
+  "profile": "Open profile",
+  "zoomIn": "Zoom in",
+  "zoomOut": "Zoom out",
+  "reset": "Reset view",
+  "pick": "Select a country"
+ },
+ "timelinePage": {
+  "title": "Global timeline",
+  "lead": "Scroll to zoom, drag to pan. Filter by continent and category, or jump to any year to see what happened around the world.",
+  "year": "What happened in this year?",
+  "yearPh": "e.g. 1453 or -550",
+  "go": "Go",
+  "nearby": "Events within {{r}} years of {{y}}",
+  "noneNear": "No catalogued events within {{r}} years of {{y}}.",
+  "zoom": "Zoom",
+  "count": "{{n}} events shown"
+ },
+ "civsPage": {
+  "title": "Civilizations and empires",
+  "lead": "Profiles of the great states of history, with dates, territory and sources.",
+  "compare": "Compare two empires",
+  "duration": "Duration",
+  "years": "{{n}} years",
+  "founded": "Foundation and period",
+  "extent": "Geographical extent",
+  "rulers": "Major rulers",
+  "political": "Political system",
+  "economy": "Economy",
+  "culture": "Culture",
+  "military": "Military history",
+  "achievements": "Achievements",
+  "decline": "Decline and legacy",
+  "modern": "Modern states on its territory",
+  "unknownArea": "No reliable estimate"
+ },
+ "compare": {
+  "title": "Compare empires",
+  "lead": "Choose two civilizations to compare them side by side.",
+  "a": "First",
+  "b": "Second",
+  "period": "Historical period",
+  "territory": "Peak territory (million km²)",
+  "influence": "Modern states on territory",
+  "swap": "Swap"
+ },
+ "peoplePage": {
+  "title": "Historical personalities",
+  "lead": "Rulers, scientists, philosophers and artists who shaped history.",
+  "all": "All",
+  "search": "Search people...",
+  "empty": "No people match this filter yet.",
+  "born": "Born",
+  "died": "Died",
+  "context": "Historical context",
+  "related": "Related people",
+  "country": "Associated country"
+ },
+ "cats": {
+  "rulers": "Kings and queens",
+  "military": "Military leaders",
+  "scientists": "Scientists",
+  "philosophers": "Philosophers",
+  "explorers": "Explorers",
+  "political": "Political leaders",
+  "artists": "Artists",
+  "religious": "Religious figures"
+ },
+ "eventsPage": {
+  "title": "Wars and historical events",
+  "lead": "Key events across every continent, presented neutrally with their sources.",
+  "all": "All categories",
+  "empty": "No events match these filters.",
+  "related": "Related events",
+  "date": "Date",
+  "category": "Category",
+  "continent": "Continent",
+  "viewTimeline": "View on timeline"
+ },
+ "notFound": {
+  "title": "Page not found",
+  "body": "This page does not exist or has moved."
+ }
+}

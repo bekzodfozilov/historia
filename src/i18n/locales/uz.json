@@ -1,0 +1,244 @@
+{
+ "nav": {
+  "explore": "Kashf etish",
+  "countries": "Davlatlar",
+  "timeline": "Xronologiya",
+  "civilizations": "Sivilizatsiyalar",
+  "people": "Shaxslar",
+  "events": "Voqealar",
+  "menu": "Menyu",
+  "close": "Yopish"
+ },
+ "hero": {
+  "eyebrow": "Insoniyat tarixining raqamli muzeyi",
+  "title": "Insoniyatning butun tarixi. Bir joyda.",
+  "lead": "Davlatlar, imperiyalar, shaxslar va voqealar — besh ming yillik tarix xaritada, sanalar va manbalar bilan o‘zaro bog‘langan.",
+  "stats": {
+   "years": "yillik yozma tarix",
+   "countries": "o‘rganish uchun davlat",
+   "langs": "til"
+  }
+ },
+ "search": {
+  "placeholder": "Davlatlar, imperiyalar, shaxslar, voqealarni qidiring...",
+  "recent": "So‘nggi qidiruvlar",
+  "clear": "Tozalash",
+  "noResults": "«{{q}}» bo‘yicha hech narsa topilmadi. Boshqacha yozib yoki kengroq so‘z bilan urinib ko‘ring.",
+  "hint": "Qidirish uchun / tugmasini bosing",
+  "groups": {
+   "civilizations": "Sivilizatsiyalar",
+   "people": "Shaxslar",
+   "events": "Voqealar",
+   "countries": "Davlatlar"
+  }
+ },
+ "sections": {
+  "timeline": {
+   "eyebrow": "Solnoma",
+   "title": "Besh ming yillik bir qarashda",
+   "lead": "Tanlangan xronologiyani suring yoki aylantiring. Har bir sana o‘z aniqlik darajasini ko‘rsatadi.",
+   "all": "To‘liq xronologiyani ochish"
+  },
+  "civs": {
+   "eyebrow": "Sivilizatsiyalar va imperiyalar",
+   "title": "Tarixning buyuk davlatlari",
+   "all": "Barcha sivilizatsiyalar",
+   "peak": "Eng katta hudud",
+   "capital": "Poytaxt",
+   "disputed": "Bahsli"
+  },
+  "people": {
+   "eyebrow": "Shaxslar",
+   "title": "Mutafakkirlar va bunyodkorlar",
+   "all": "Barcha shaxslar"
+  },
+  "today": {
+   "eyebrow": "Tarixda bugun",
+   "title": "Tarixda {{date}}",
+   "empty": "Bu sana uchun hali tasdiqlangan voqealar kiritilmagan. Muharrirlarimiz har hafta yangi yozuvlar qo‘shadi.",
+   "prev": "Oldingi kun",
+   "next": "Keyingi kun"
+  },
+  "map": {
+   "eyebrow": "Atlas",
+   "title": "Dunyo xaritasini o‘rganing",
+   "lead": "Davlatni aniqlash uchun ustiga olib boring. To‘liq atlasda tarixiy chegaralar, davr qatlamlari va taqqoslashlar bo‘ladi.",
+   "open": "Atlasni ochish",
+   "hover": "Davlat ustiga olib boring"
+  },
+  "recent": {
+   "eyebrow": "Yangi qo‘shilganlar",
+   "title": "Arxivdagi yangiliklar",
+   "added": "Qo‘shilgan"
+  }
+ },
+ "categories": {
+  "politics": "Siyosat",
+  "wars": "Urushlar",
+  "science": "Fan",
+  "technology": "Texnologiya",
+  "culture": "Madaniyat",
+  "religion": "Din",
+  "geography": "Geografiya",
+  "discoveries": "Kashfiyotlar"
+ },
+ "kinds": {
+  "civilizations": "Sivilizatsiya",
+  "people": "Shaxs",
+  "events": "Voqea",
+  "countries": "Davlat"
+ },
+ "common": {
+  "sources": "Manbalar",
+  "readMore": "Batafsil",
+  "back": "Bosh sahifaga qaytish"
+ },
+ "soon": {
+  "eyebrow": "Ishlab chiqilmoqda",
+  "body": "Bu bo‘lim keyingi bosqichda tayyorlanadi. Bosh sahifa, navigatsiya, qidiruv va ikki tilli tizim hozir ishlamoqda.",
+  "stage": "{{n}}-bosqichda rejalashtirilgan"
+ },
+ "footer": {
+  "tagline": "Insoniyat tarixining raqamli muzeyi, atlasi va ensiklopediyasi.",
+  "sourcing": "Ma’lumotlar muzeylar, universitetlar va e’tirof etilgan ma’lumotnomalardan olinadi. Bahsli sanalar belgilangan.",
+  "rights": "HISTORIA"
+ },
+ "continents": {
+  "all": "Barcha qit’alar",
+  "africa": "Afrika",
+  "americas": "Amerika",
+  "asia": "Osiyo",
+  "europe": "Yevropa",
+  "oceania": "Okeaniya",
+  "antarctic": "Antarktika"
+ },
+ "countries": {
+  "title": "Dunyo davlatlari",
+  "lead": "{{n}} ta davlat va hudud. Qidiring, qit’a yoki tarixiy davr bo‘yicha saralang va istalgan profilni oching.",
+  "search": "Davlatlarni qidiring...",
+  "sortAZ": "A → Z",
+  "sortZA": "Z → A",
+  "sortArea": "Eng katta maydon",
+  "period": "Tarixiy davr",
+  "anyPeriod": "Istalgan davr",
+  "results": "{{n}} ta natija",
+  "empty": "Bu filtrlarga mos davlat topilmadi.",
+  "reset": "Filtrlarni tozalash",
+  "capital": "Poytaxt",
+  "area": "Maydon",
+  "region": "Mintaqa",
+  "languages": "Tillar",
+  "borders": "Qo‘shnilar",
+  "status": "Maqom",
+  "independent": "Mustaqil davlat",
+  "territory": "Hudud",
+  "un": "BMT a’zosi",
+  "landlocked": "Dengizga chiqish yo‘q",
+  "curated": "To‘liq tarix",
+  "noHistoryTitle": "Bu davlat haqidagi tarixiy maqola tayyorlanmoqda",
+  "noHistoryBody": "Biz faqat ishonchli manbalar asosida tekshirilgan tarixni e’lon qilamiz. Hozircha tasdiqlangan geografik ma’lumotlar va shu hudud bilan bog‘liq sivilizatsiyalar keltirilgan.",
+  "sections": {
+   "overview": "Umumiy ma’lumot",
+   "origins": "Kelib chiqishi va ilk tarixi",
+   "ancient": "Qadimgi davr",
+   "medieval": "O‘rta asrlar",
+   "modern": "Yangi davr",
+   "contemporary": "Eng yangi tarix"
+  },
+  "empires": "Sobiq podsholik va imperiyalar",
+  "places": "Muhim tarixiy joylar",
+  "onMap": "Xaritada ko‘rsatish",
+  "none": "Yo‘q"
+ },
+ "explore": {
+  "title": "Atlas",
+  "lead": "Profilini ko‘rish uchun istalgan davlatni bosing. Qaysi zamonaviy davlatlar uning asosiy hududida joylashganini ko‘rish uchun sivilizatsiyani tanlang.",
+  "layer": "Tarixiy qatlam",
+  "layerNone": "Hozirgi chegaralar",
+  "layerNote": "Belgilangan davlatlar zamonaviy chegaralar asosidagi taxminiy ko‘rinish, tarixiy chegaralar emas. Ishonchli tarixiy chegara ma’lumotlari alohida qatlam sifatida qo‘shiladi.",
+  "compare": "Taqqoslash",
+  "compareWith": "Xaritadan ikkinchi davlatni tanlang",
+  "clear": "Tozalash",
+  "profile": "Profilni ochish",
+  "zoomIn": "Yaqinlashtirish",
+  "zoomOut": "Uzoqlashtirish",
+  "reset": "Boshlang‘ich ko‘rinish",
+  "pick": "Davlatni tanlang"
+ },
+ "timelinePage": {
+  "title": "Jahon xronologiyasi",
+  "lead": "Yaqinlashtirish uchun aylantiring, surish uchun torting. Qit’a va toifa bo‘yicha saralang yoki dunyoda nima bo‘lganini ko‘rish uchun istalgan yilga o‘ting.",
+  "year": "Bu yilda nima bo‘lgan?",
+  "yearPh": "masalan, 1453 yoki -550",
+  "go": "O‘tish",
+  "nearby": "{{y}}-yildan {{r}} yil atrofidagi voqealar",
+  "noneNear": "{{y}}-yildan {{r}} yil atrofida kiritilgan voqealar yo‘q.",
+  "zoom": "Masshtab",
+  "count": "{{n}} ta voqea ko‘rsatilmoqda"
+ },
+ "civsPage": {
+  "title": "Sivilizatsiyalar va imperiyalar",
+  "lead": "Tarixning buyuk davlatlari: sanalar, hudud va manbalar bilan.",
+  "compare": "Ikki imperiyani taqqoslash",
+  "duration": "Davomiyligi",
+  "years": "{{n}} yil",
+  "founded": "Tashkil topishi va davri",
+  "extent": "Geografik hududi",
+  "rulers": "Asosiy hukmdorlar",
+  "political": "Siyosiy tuzum",
+  "economy": "Iqtisodiyot",
+  "culture": "Madaniyat",
+  "military": "Harbiy tarix",
+  "achievements": "Yutuqlar",
+  "decline": "Tanazzul va meros",
+  "modern": "Hududidagi zamonaviy davlatlar",
+  "unknownArea": "Ishonchli baho yo‘q"
+ },
+ "compare": {
+  "title": "Imperiyalarni taqqoslash",
+  "lead": "Yonma-yon taqqoslash uchun ikki sivilizatsiyani tanlang.",
+  "a": "Birinchi",
+  "b": "Ikkinchi",
+  "period": "Tarixiy davr",
+  "territory": "Eng katta hudud (mln km²)",
+  "influence": "Hududidagi zamonaviy davlatlar",
+  "swap": "Almashtirish"
+ },
+ "peoplePage": {
+  "title": "Tarixiy shaxslar",
+  "lead": "Tarixni shakllantirgan hukmdorlar, olimlar, faylasuflar va san’atkorlar.",
+  "all": "Barchasi",
+  "search": "Shaxslarni qidiring...",
+  "empty": "Bu toifada hozircha shaxslar yo‘q.",
+  "born": "Tug‘ilgan",
+  "died": "Vafot etgan",
+  "context": "Tarixiy kontekst",
+  "related": "Bog‘liq shaxslar",
+  "country": "Bog‘liq davlat"
+ },
+ "cats": {
+  "rulers": "Podsho va malikalar",
+  "military": "Sarkardalar",
+  "scientists": "Olimlar",
+  "philosophers": "Faylasuflar",
+  "explorers": "Sayyohlar",
+  "political": "Siyosiy arboblar",
+  "artists": "San’atkorlar",
+  "religious": "Diniy arboblar"
+ },
+ "eventsPage": {
+  "title": "Urushlar va tarixiy voqealar",
+  "lead": "Barcha qit’alardagi muhim voqealar, manbalari bilan xolis bayon qilingan.",
+  "all": "Barcha toifalar",
+  "empty": "Bu filtrlarga mos voqea topilmadi.",
+  "related": "Bog‘liq voqealar",
+  "date": "Sana",
+  "category": "Toifa",
+  "continent": "Qit’a",
+  "viewTimeline": "Xronologiyada ko‘rish"
+ },
+ "notFound": {
+  "title": "Sahifa topilmadi",
+  "body": "Bu sahifa mavjud emas yoki ko‘chirilgan."
+ }
+}
