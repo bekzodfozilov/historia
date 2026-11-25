@@ -1,4 +1,39 @@
-# HISTORIA backend — architecture blueprint (implemented in Stage 7)
+# HISTORIA backend
+
+FastAPI · SQLAlchemy 2 · PostgreSQL (SQLite locally) · JWT (access + refresh) · roles (admin / editor / reader)
+
+## Run locally
+```bash
+cd backend
+python3 -m venv .venv && .venv/bin/pip install -r requirements-dev.txt
+.venv/bin/uvicorn app.main:app --reload --port 8000     # http://localhost:8000/api/docs
+.venv/bin/python -m pytest -q                          # tests
+```
+Then start the frontend with `VITE_API_URL=http://localhost:8000 npm run dev` — the search bar queries the API
+(and falls back to the bundled index if the API is unreachable).
+
+On first start the tables are created and seeded from `app/seed/data.json`, which is exported from the
+frontend datasets with `npm run export:seed` (re-run it after editing `src/data/*`, then reset the DB).
+
+| Env var | Default | |
+|---|---|---|
+| `DATABASE_URL` | `sqlite:///./historia.db` | `postgres://…` URLs are accepted |
+| `JWT_SECRET` | dev value | required (32+ chars) when `ENVIRONMENT=production` |
+| `CORS_ORIGINS` / `CORS_ORIGIN_REGEX` | localhost dev ports | frontend origins allowed to call the API |
+| `ADMIN_EMAIL` / `ADMIN_PASSWORD` | – | creates/promotes an admin on startup |
+
+## Endpoints (`/api/v1`)
+- `GET /civilizations`, `/civilizations/{slug}`, `/people?category=`, `/people/{slug}`
+- `GET /events?category=&continent=&year_from=&year_to=`, `/events/on-this-day?month=&day=`, `/events/{slug}`
+- `GET /countries?continent=`, `/countries/{cca3}`, `GET /search?q=&limit=`
+- every read endpoint takes `?lang=en|uz` to resolve bilingual fields
+- `POST /auth/register`, `/auth/login`, `/auth/refresh`, `GET /auth/me`
+- `PUT /admin/events/{slug}` (editor/admin), `DELETE /admin/events/{slug}`, `PUT /admin/users/{id}/role` (admin)
+- `GET /api/health`, OpenAPI docs at `/api/docs`
+
+---
+
+# Target architecture (roadmap)
 
 FastAPI · PostgreSQL · SQLAlchemy 2 · Alembic · JWT (access + refresh) · RBAC
 

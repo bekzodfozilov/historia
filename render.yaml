@@ -1,14 +1,51 @@
-# Render Blueprint — static frontend (React + Vite)
+# Render Blueprint: New → Blueprint → select this repo → Apply.
+# Creates the PostgreSQL database, the FastAPI backend and the static React frontend.
+databases:
+  - name: historia-db
+    plan: free
+    databaseName: historia
+    user: historia
+
 services:
+  # ---------- Backend: FastAPI ----------
+  - type: web
+    name: historia-api
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements-dev.txt && python -m pytest -q -p no:warnings
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT --proxy-headers
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      - key: ENVIRONMENT
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: historia-db
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CORS_ORIGIN_REGEX
+        value: ^https://historia(-[a-z0-9]+)?\.onrender\.com$
+      # Optional — set in the dashboard to create an admin account on startup:
+      # ADMIN_EMAIL, ADMIN_PASSWORD
+
+  # ---------- Frontend: React + Vite static site ----------
   - type: web
     name: historia
     runtime: static
     buildCommand: npm ci && npm test && npm run build
     staticPublishPath: ./dist
-    pullRequestPreviewsEnabled: false
     envVars:
       - key: NODE_VERSION
         value: "22"
+      - key: VITE_API_URL
+        fromService:
+          name: historia-api
+          type: web
+          property: host
     headers:
       - path: /assets/*
         name: Cache-Control

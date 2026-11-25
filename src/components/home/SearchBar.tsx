@@ -1,9 +1,11 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useQuery } from "@tanstack/react-query";
 import { AnimatePresence, motion } from "framer-motion";
 import { Search, Clock, CornerDownLeft } from "lucide-react";
 import { search, type SearchDoc } from "@/lib/search";
 import { useSearchStore } from "@/store/search";
+import { API_URL, apiSearch } from "@/lib/api";
 import { useLang } from "@/lib/useLang";
 
 export function SearchBar() {
@@ -14,7 +16,18 @@ export function SearchBar() {
   const [active, setActive] = useState(0);
   const input = useRef<HTMLInputElement>(null);
   const { history, push, clear } = useSearchStore();
-  const results = useMemo(() => search(q), [q]);
+  const [debounced, setDebounced] = useState("");
+  useEffect(() => { const id = setTimeout(() => setDebounced(q.trim()), 200); return () => clearTimeout(id); }, [q]);
+  const local = useMemo(() => search(q), [q]);
+  // With a backend configured, rank on the server; fall back to the bundled index while loading or if the API is down.
+  const remote = useQuery({
+    queryKey: ["search", debounced],
+    queryFn: ({ signal }) => apiSearch(debounced, signal),
+    enabled: !!API_URL && !!debounced,
+    staleTime: 60_000,
+    retry: 0,
+  });
+  const results = (q.trim() === debounced && remote.data) || local;
 
   useEffect(() => {
     const on = (e: KeyboardEvent) => {

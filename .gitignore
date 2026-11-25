@@ -7,3 +7,10 @@ dist-preview/
 .env.*
 !.env.example
 npm-debug.log*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+*.db

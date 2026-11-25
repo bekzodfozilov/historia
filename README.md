@@ -1,4 +1,6 @@
-# HISTORIA — Stages 1–6 (frontend)
+# HISTORIA
+
+Bilingual (EN/UZ) atlas of world history. React + Vite frontend (repo root) and a FastAPI backend (`backend/`).
 
 Architecture, design system, navigation, bilingual (EN/UZ) system and homepage.
 
@@ -57,6 +59,10 @@ npm test             # data integrity (cross-links, EN/UZ parity), date formatti
 ```
 
 ## Deploying to Render
-`render.yaml` is a Render Blueprint: a static site that runs `npm ci && npm test && npm run build`,
-publishes `dist/`, and rewrites `/* → /index.html` so deep links work on refresh.
+`render.yaml` is a Render Blueprint that creates three resources:
+- **historia-db** — PostgreSQL (free plan; Render deletes free databases after 30 days unless upgraded)
+- **historia-api** — FastAPI backend (`backend/`); build runs the pytest suite, health check `/api/health`
+- **historia** — static frontend; build runs `npm test`, gets the API URL via `VITE_API_URL`, SPA rewrite `/* → /index.html`
+
 In Render: **New → Blueprint → pick this GitHub repo → Apply**. Every push to `main` redeploys.
+Optionally set `ADMIN_EMAIL` / `ADMIN_PASSWORD` on historia-api to create an admin account.
